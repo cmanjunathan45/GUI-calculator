@@ -216,4 +216,3 @@ tk.mainloop()
 
 
 
-#audio driver for linux (jack)se
