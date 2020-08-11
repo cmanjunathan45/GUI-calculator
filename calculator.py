@@ -133,13 +133,10 @@ def equal():
 
 
 #Value Entry TAB
-e=Entry(tk,width=50,borderwidth=1)
-e.grid(row=0,column=0,columnspan=3,padx=100,pady=10)
+e=Entry(tk,width=20,borderwidth=1)
+e.grid(row=4,column=1,columnspan=3,padx=5,pady=1)
 
-#Label creation
 
-label=Label(tk,text="Numbers")
-label.place(x=50,y=50)
 
 #buttons 0-9
 button_0=Button(text="0",fg="black",bg="red",command=lambda :press(0),height=3,width=10)
