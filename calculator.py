@@ -3,7 +3,8 @@ from tkinter import *
 tk=Tk()
 tk.title("CALCULATOR")
 tk.configure(bg="light green")
-
+ico=PhotoImage(file="icon.png")
+tk.iconphoto(True,ico)
 #pressing function
 def press(number):
 	current=e.get()
@@ -131,12 +132,9 @@ def equal():
 	except ZeroDivisionError:
 		e.insert(0,"MATH ERROR:CAN'T DIVIDED BY ZERO")
 
-
 #Value Entry TAB
 e=Entry(tk,width=20,borderwidth=1)
 e.grid(row=4,column=1,columnspan=3,padx=5,pady=1)
-
-
 
 #buttons 0-9
 button_0=Button(text="0",fg="black",bg="red",command=lambda :press(0),height=3,width=10)
@@ -168,8 +166,6 @@ button_8.grid(row=3,column=2)
 
 button_9=Button(text="9",fg="black",bg="red",command=lambda: press(9),height=3,width=10)
 button_9.grid(row=4,column=0)
-
-
 
 #button +-*/ and clear
 button_m=Button(text="+",fg="black",bg="red",command=add,height=3,width=10)
@@ -208,11 +204,4 @@ button_m.grid(row=8,column=1)
 button_m=Button(text="=",fg="black",bg="Yellow",command=equal,height=3,width=10)
 button_m.grid(row=8,column=2)
 
-
-
 tk.mainloop()
-
-
-
-
-
